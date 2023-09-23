@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='<%= htmlWebpackPlugin.options.style %>'>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+    <div class="max-w-4xl gap-2 flex flex-col items-center justify-center w-full min-h-screen mx-auto">
+        <h1 class="font-bold text-xl p-4 border rounded-md">@smarterp/calendar</h1>
+        <div id="evoCalendar" class="evoCalendar w-full border bg-white drop-shadow-lg"></div>
+    </div>
+
+    <div class="max-w-4xl flex flex-col gap-10 items-center w-full h-[50vh] mx-auto">
+        <h1 class="font-bold text-xl p-4 border rounded-md">Installation ♻️🚀</h1>
+        <code class="p-4 border rounded-md"> npm i -D @smarterp/calendar </code>
+    </div>
+
+    <div class="max-w-4xl flex flex-col gap-15 items-center w-full h-[50vh] mx-auto">
+        <h1 class="font-bold text-xl p-4 my-5 border rounded-md">Usages 🛫</h1>
+        <h1 class="font-bold text-lg"><a href="https://github.com/turbotechlabs/calendar">Document</a></h1>
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', ()=> {
+
+            const newCalendar = document.querySelectorAll('#evoCalendar')
+            smartCalendar(
+                newCalendar,
+                {
+                    language: 'en', // km
+                    sidebarDisplayDefault: false,
+                    calendarEvents: [
+                        {
+                            id: '1',
+                            name: "King Father's Commemoration Day",
+                            date: "October/15/2023",
+                            description: "ទិវា ប្រារព្ធ ពិធី គោរព ព្រះវិញ្ញាណក្ខន្ធ ព្រះករុណា ព្រះបាទ សម្តេច ព្រះ នរោត្តម សីហនុ ព្រះមហាវីរក្សត្រ ព្រះ វររាជ បិតា ឯករាជ្យ បូរណភាព ទឹកដី និង ឯកភាព ជាតិ ខ្មែរ (King Father's Commemoration Day)",
+                            type: "event",
+                            everyYear: true,
+                            color: "red"
+                        },
+                        {
+                            id: '2',
+                            name: "Pchum Ben Festival",
+                            date: ["October/13/2023", "October/15/2023"],
+                            description: "ពិធី បុណ្យ ភ្ជុំ បិណ្ឌ (Pchum Ben Festival)",
+                            badge: "3Days",
+                            type: "event",
+                            everyYear: true,
+                            color: "red" 
+                        },
+                        {
+                            id: '3',
+                            name: "ថ្ងៃដាក់បិណ្ឌ",
+                            date: ["september/30/2023", "October/12/2023"],
+                            description: "ថ្ងៃដាក់បិណ្ឌ",
+                            type: "event",
+                            everyYear: true,
+                            color: "green"
+                        },
+                    ]
+                }
+            );
+        })
+    </script>
+
+
+</body>
+</html>

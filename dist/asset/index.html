@@ -1,4 +1,30 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./asset/css/index.css"><title>Calendar</title><script defer="defer" src="js/jquery.js"></script><script defer="defer" src="js/app.js"></script></head><body><div class="max-w-4xl gap-2 flex flex-col items-center justify-center w-full min-h-screen mx-auto"><h1 class="font-bold text-xl p-4 border rounded-md">@smarterp/calendar</h1><div id="evoCalendar" class="evoCalendar w-full border bg-white drop-shadow-lg"></div></div><div class="max-w-4xl flex flex-col gap-10 items-center w-full h-[50vh] mx-auto"><h1 class="font-bold text-xl p-4 border rounded-md">Installation ♻️🚀</h1><code class="p-4 border rounded-md">npm i -D @smarterp/calendar</code></div><div class="max-w-4xl flex flex-col gap-15 items-center w-full h-[50vh] mx-auto"><h1 class="font-bold text-xl p-4 my-5 border rounded-md">Usages 🛫</h1><h1 class="font-bold text-lg"><a href="https://github.com/turbotechlabs/calendar">Document</a></h1></div><script>document.addEventListener('DOMContentLoaded', ()=> {
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <title>Calendar</title>
+    <script defer="defer" src="js/jquery.js"></script>
+    <script defer="defer" src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="max-w-4xl gap-2 flex flex-col items-center justify-center w-full min-h-screen mx-auto">
+        <h1 class="font-bold text-xl p-4 border rounded-md">@smarterp/calendar</h1>
+        <div id="evoCalendar" class="evoCalendar w-full border bg-white drop-shadow-lg"></div>
+    </div>
+    <div class="max-w-4xl flex flex-col gap-10 items-center w-full h-[50vh] mx-auto">
+        <h1 class="font-bold text-xl p-4 border rounded-md">Installation ♻️🚀</h1><code
+            class="p-4 border rounded-md">npm i -D @smarterp/calendar</code>
+    </div>
+    <div class="max-w-4xl flex flex-col gap-15 items-center w-full h-[50vh] mx-auto">
+        <h1 class="font-bold text-xl p-4 my-5 border rounded-md">Usages 🛫</h1>
+        <h1 class="font-bold text-lg"><a href="https://github.com/turbotechlabs/calendar">Document</a></h1>
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', () => {
 
             const newCalendar = document.querySelectorAll('#evoCalendar')
             smartCalendar(
@@ -24,7 +50,7 @@
                             badge: "3Days",
                             type: "event",
                             everyYear: true,
-                            color: "red" 
+                            color: "red"
                         },
                         {
                             id: '3',
@@ -38,4 +64,7 @@
                     ]
                 }
             );
-        })</script></body></html>
+        })</script>
+</body>
+
+</html>

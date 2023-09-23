@@ -1,7 +1,9 @@
 {
     "name": "@smarterp/calendar",
-    "version": "0.0.1",
+    "version": "0.0.1-dev-0.0.3",
     "description": "",
+    "main": "./src/asset/js/index.js",
+    "types": "component",
     "scripts": {
         "build": "npm run style && webpack",
         "dev": "webpack serve && npm run style",
@@ -9,7 +11,7 @@
         "style:watch": "npx tailwindcss -i ./src/asset/css/index.css -o ./dist/asset/css/index.css --watch"
     },
     "keywords": [],
-    "author": "Sophat Leat <webdev>",
+    "author": "smarterp <turbotech.ui.draft@gmail.com>",
     "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.18.10",
@@ -31,5 +33,16 @@
     },
     "dependencies": {
         "query": "^0.2.0"
-    }
+    },
+    "directories": {
+        "doc": "doc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/turbotechlabs/calendar.git"
+    },
+    "bugs": {
+        "url": "https://github.com/turbotechlabs/calendar"
+    },
+    "homepage": "https://codepen.io/leatsophat/full/RwEQxWb"
 }

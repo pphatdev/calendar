@@ -1,8 +1,8 @@
 {
     "name": "@smarterp/calendar",
-    "version": "0.0.1-dev-0.0.5",
+    "version": "0.1.1",
     "description": "",
-    "main": "./src/types/calendar.ts",
+    "main": "./dist/components/calendar.js",
     "scripts": {
         "serve": "npm run copy:file && live-server ./dist",
         "style": "npm run style:watch",

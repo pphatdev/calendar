@@ -2,17 +2,31 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    // mode: 'development', //development
-    mode: 'production', //development
+    mode: 'development', //development
+    // mode: 'production', //development
     entry: {
-        jquery: path.resolve(__dirname, './src/asset/js/jquery.js'),
-        app: path.resolve(__dirname, 'src/asset/js/index.js')
+        jquery: [
+            path.resolve(__dirname, './src/js/jquery.js'),
+            './src/js/jquery.js'
+        ],
+        index: [
+            path.resolve(__dirname, './src/js/index.js'), 
+            './src/js/index.js'
+        ],
+        // calendar: [
+        //     path.resolve(__dirname, './src/types/calendar.ts'), 
+        //     './src/types/calendar.ts'
+        // ],
     },
     output: {
-        path: path.resolve(__dirname, './dist/asset'),
-        filename: 'js/[name].js',
+        filename: '[name].js',
+        // path: path.resolve(__dirname, './dist'),
+        // filename: '[name]' + this.entry,
         clean: true,
-        assetModuleFilename: '[name][ext]'
+        // assetModuleFilename: '[name][ext]'
+    },
+    resolve: {
+        extensions: ['.ts', '.js'],
     },
     devServer: {
         static: {
@@ -27,7 +41,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: "Calendar",
-            style: './asset/css/index.css',
+            style: './css/index.css',
             filename: 'index.html',
             template: 'src/index.html'
         })
@@ -50,11 +64,11 @@ module.exports = {
                 test:/\.(png|jpg|jpeg|gif|svg)$/i,
                 type: 'asset/resource'
             },
-            // {
-            //     test: /\.css$/i,
-            //     include: path.resolve(__dirname, 'src'),
-            //     use: ['style-loader', 'css-loader', 'postcss-loader'],
-            // },
+            {
+                test: /\.(tsx|ts|js|jsx)$/i,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
 
         ],
     }

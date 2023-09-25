@@ -96,7 +96,7 @@
 
 
 .mainCard{ /* main */
-    @apply w-full mx-auto px-5 pb-5;
+    @apply w-full px-5 pb-5 mx-auto;
 }
 
 .cardContainer{ /* Container */
@@ -104,12 +104,12 @@
 }
 
 .eachCard{ /* each card */
-    @apply bg-white dark:bg-gray-800 rounded shadow-md p-5;
+    @apply p-5 bg-white rounded shadow-md dark:bg-gray-800;
 }
 
 
 /*-------------------------------------
-|   EvoCalendar with Tailwindcss 
+|   erpCalendar with Tailwindcss 
 |--------------------------------------
 |   author  : Leat Sophat
 |   date    : 10-13-2022
@@ -119,12 +119,12 @@
 
 /*======================================
 |   Main Layout
-|   mainClass   :   evoCalendar
+|   mainClass   :   erpCalendar
 |=======================================
 |   Control Main Layout
 |   
 */
-.evoCalendar {
+.erpCalendar {
     @apply flex flex-row relative mx-auto overflow-hidden transition-all duration-500 rounded-lg
 }
 
@@ -331,9 +331,7 @@
 
 /* Event Toggle Button right sidebar */
 #sidebarToggler {
-    @apply absolute top-3 -right-10 transition-all duration-500 
-    w-7 h-7 flex justify-center items-center 
-    rounded-md border border-transparent;
+    @apply absolute flex items-center justify-center transition-all duration-500 border border-transparent rounded-md top-3 -right-10 w-7 h-7;
 }
 
 
@@ -377,8 +375,8 @@
 */
 
 /* Defualt */
-.dark .evoCalendar,
-.dark.evoCalendar {
+.dark .erpCalendar,
+.dark.erpCalendar {
     @apply bg-slate-800
 }
 
@@ -626,4 +624,8 @@
         to-[color:rgba(var(--color-info-500))]
         hover:from-[color:rgba(var(--color-info-500))] 
         hover:to-[color:rgba(var(--color-info-500))]
+}
+
+.container>h1 {
+	@apply h-screen
 }

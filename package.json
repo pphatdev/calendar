@@ -1,14 +1,14 @@
 {
     "name": "@smarterp/calendar",
-    "version": "0.0.1-dev-0.0.3",
+    "version": "0.0.1-dev-0.0.4",
     "description": "",
-    "main": "./src/asset/js/index.js",
-    "types": "component",
+    "main": "./src/types/calendar.ts",
+    "types": "module",
     "scripts": {
-        "build": "npm run style && webpack",
+        "build": "webpack && npm run style",
         "dev": "webpack serve && npm run style",
-        "style": "npx tailwindcss -i ./src/asset/css/index.css -o ./dist/asset/css/index.css",
-        "style:watch": "npx tailwindcss -i ./src/asset/css/index.css -o ./dist/asset/css/index.css --watch"
+        "style": "npx tailwindcss -i ./src/css/index.css -o ./dist/css/index.css",
+        "style:watch": "npx tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --watch"
     },
     "keywords": [],
     "author": "smarterp <turbotech.ui.draft@gmail.com>",
@@ -27,6 +27,8 @@
         "sass-loader": "^13.0.2",
         "style-loader": "^3.3.1",
         "tailwindcss": "^3.1.8",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.2.2",
         "webpack": "^5.74.0",
         "webpack-cli": "^4.10.0",
         "webpack-dev-server": "^4.9.3"

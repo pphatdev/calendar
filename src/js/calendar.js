@@ -1,4 +1,4 @@
-import { windowWidth } from "./libs/windows";
+import { windowWidth } from "../libs/windows";
 
 export class Calendar {
     instanceUid = 0
@@ -1070,3 +1070,5 @@ export class Calendar {
         return new Date(d) && !isNaN(new Date(d).getTime());
     }
 }
+
+export default Calendar

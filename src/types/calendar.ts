@@ -1,2 +1,2 @@
-import {Calendar} from '../js/calendar'
+import {Calendar} from '../components/calendar'
 export default Calendar

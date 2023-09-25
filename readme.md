@@ -1,5 +1,7 @@
 # SmartERP Calendar
-
+<p align="center">
+    <img src="https://img.shields.io/npm/dt/@smarterp/calendar">
+</p>
 ## Exmaple
 
 Import on `resource/js/app.js`

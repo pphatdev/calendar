@@ -10,4 +10,4 @@ export function calendar(elements: any, options?: {}): void;
  * @example new Calendar(elements, options)
  */
 export const SmartCalendar: typeof Calendar;
-import { Calendar } from "./calendar";
+import { Calendar } from "./calendar.js";

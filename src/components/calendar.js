@@ -1,4 +1,4 @@
-import { windowWidth } from "../libs/windows";
+import { windowWidth } from "../libs/windows.js";
 
 export class Calendar {
     instanceUid = 0

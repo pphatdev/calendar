@@ -1,2 +1,2 @@
-import { SmartCalendar, smartCalendar, calendar } from "../js";
+import { SmartCalendar, smartCalendar, calendar } from "../components/index";
 export { smartCalendar, SmartCalendar, calendar }

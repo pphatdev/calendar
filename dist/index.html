@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='./css/index.css'>
-    <title>Calendar</title>
+    <title></title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
     </style>
-<script defer src="jquery.js"></script><script defer src="index.js"></script></head>
+</head>
 <body class="scroll-smooth">
+    
     <div class="max-h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
         <h1 id="light" class="relative snap-start">
             <div class="flex flex-col items-center justify-center w-full min-h-screen gap-2 mx-auto dark:bg-slate-800">
@@ -47,9 +48,9 @@
         </h1>
     </div>
     
-    
+    <script>var exports = {};</script>
+    <script src="components/index.js" type="module"></script>
     <script>
-
         document.addEventListener('DOMContentLoaded', ()=> {
 
             const newCalendar = document.querySelectorAll('.erpCalendar')

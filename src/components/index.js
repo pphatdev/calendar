@@ -1,6 +1,6 @@
 
-import $ from './jquery'
-import { Calendar } from "./calendar";
+import $ from './jquery.js'
+import { Calendar } from "./calendar.js";
 
 /**
  * Calling Calendar as Function and Support JQuery Syntax,
